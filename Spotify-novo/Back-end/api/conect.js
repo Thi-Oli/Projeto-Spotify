@@ -1,7 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const URI =
-  "mongodb+srv://projetoSpotify:4YL2pRhnsw0oHVGx@cluster0.6h2awa1.mongodb.net/?appName=Cluster0";
+const URI = process.env.REACT_APP_URI;
 
 const client = new MongoClient(URI);
 
